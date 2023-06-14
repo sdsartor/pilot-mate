@@ -5,7 +5,7 @@
 
 * {
   box-sizing: border-box;
-  margin: 2px;
+  margin: 0px;
   padding: 0px;
 }
 
@@ -31,7 +31,7 @@ p {
   font-size: 1.4rem;
 }
 
-.App {
+.Weather {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -39,7 +39,7 @@ p {
   color:antiquewhite;
 }
 
-.App::before {
+.Weather::before {
   content: '';
   background: url(./assets/background-plane.jpg) no-repeat;
   position: absolute;
@@ -54,7 +54,7 @@ p {
 
 .container {
   max-width: 700px;
-  height: 700px;
+  height: 400px;
   margin: auto;
   padding: 0 1rem;
   position: relative;
@@ -64,18 +64,20 @@ p {
   justify-content: space-between;
 }
 
-.App .top {
+.Weather .top {
   width: 100%;
 margin: 1rem auto;
 
+
 }
 
-.App .search {
+
+.Weather .search {
   text-align: center;
   padding: 1rem;
 }
 
-.App input {
+.Weather input {
   padding: 0.7rem 1.5rem;
   font-size: 1.2rem;
   border-radius: 16px;
@@ -88,15 +90,15 @@ margin: 1rem auto;
   color:antiquewhite
 }
 
-.App .description {
+.Weather .description {
   position: relative;
-  top: 200%;
+  top: 50%;
   right: -92%;
 transform-origin: 0 0;
 transform: rotate(270deg);
 }
 
-.App .bottom {
+.Weather .bottom {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
