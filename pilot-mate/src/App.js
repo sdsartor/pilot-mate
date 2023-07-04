@@ -1,12 +1,17 @@
 import React from 'react';
 import './App.css';
-import Weather from './component/weather'
-// const {google} = require('googleapis');
-// const tasks = google.tasks('v1');
+import Weather from './pages/weather'
+import Dashboard from './component/dashboard';
+import Notes from './pages/notes';
+import createArea from './pages/Area';
+
 
 function App() {
   return (
     <>
+    <Dashboard />
+    <createArea />
+    <Notes />
     <Weather />
     </>
   )
