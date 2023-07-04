@@ -1,6 +1,6 @@
 import React from "react";
 
-function createArea(props) {
+function CreateArea(props) {
     return (
         <div>
             <form>
@@ -13,4 +13,4 @@ function createArea(props) {
     )
 }
 
-export default createArea;
+export default CreateArea;

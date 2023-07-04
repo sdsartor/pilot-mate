@@ -1,7 +1,12 @@
 import React, { Component, useState } from 'react';
 
-function Notes() {
-
+function Notes(props) {
+return (
+    <div className='note'>
+        <h1>My Note</h1>
+        <p>Hey how's it going</p>
+    </div>
+)
 
 
 // const { google } = require('googleapis')
