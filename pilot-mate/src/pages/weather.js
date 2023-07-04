@@ -16,7 +16,7 @@ const [location, setLocation] = useState('')
   }
 
     return (
-    <div className='Weather'>
+    <div id='background2' className='Weather'>
   <div className='search'>
   <input value={location} onChange={event => setLocation(event.target.value)}
   onKeyPress={searchLocation}

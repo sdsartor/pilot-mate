@@ -118,35 +118,38 @@ form {
   width: 600px;
   margin: 32px auto 50px auto;
   background: #fff;
-  padding: 70px;
+  padding: 7px;
   border-radius: 7px;
   box-shadow: 0 1px 7px black;
+  color: #5f6368;
 
 }
 
 form input{
   width: 100%;
   border: none;
-  margin: 4px 10px;
+  padding: 4px 10px;
   margin-bottom: 20px;
   outline: none;
   font-size: 1rem;
-  resize: none
+  resize: none;
 }
 
 form textarea {
   width: 100%;
   border: none;
-  margin: 4px 10px;
-  margin-bottom: 20px;
+  padding: 4px 10px;
   outline: none;
   font-size: 1rem;
   resize: none
 }
 
 .background {
-  background-image: url(./assets/private_plane-wallpaper-1920x1200.jpg);
+  background: url(./assets/private_plane-wallpaper-1920x1200.jpg) no-repeat;
   width: 100%;
   padding: 20rem;
+ 
 
 }
+
+

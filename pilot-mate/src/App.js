@@ -6,6 +6,7 @@ import Weather from './pages/weather'
 import Header from './component/dashboard';
 
 import CreateArea from './pages/Area';
+import Notes from './pages/notes';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
             />
             <Route
             path='/Notes'
-            element= {<CreateArea />}
+            element= {<div><CreateArea /><Notes /></div>}
             />
             <Route
             path="/Weather"
