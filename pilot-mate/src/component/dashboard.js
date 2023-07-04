@@ -1,4 +1,5 @@
 import React, { Component, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -7,10 +8,13 @@ const Header = () => {
         <div className="header">
           <div className="header-left">
             </div>
-            <page-nave-list>
-            <a href='./Weather' id='Weather-page' style={{float: '24px'}}>Weather</a>
-            <a href="./CreateArea" id="Notes-page" style={{float: '24px'}}>Notes</a>
-            </page-nave-list>
+              <Link className="btn btn-lg btn-info m-2 ui primary button" to="/Notes">
+                Notes
+              </Link>
+              <Link className="btn btn-lg btn-light m-2 ui primary button" to="/Weather">
+                Weather
+           </Link>
+   
             </div>
             </nav>
             </header>

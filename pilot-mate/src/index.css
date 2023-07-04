@@ -118,7 +118,7 @@ form {
   width: 600px;
   margin: 32px auto 50px auto;
   background: #fff;
-  padding: 7px;
+  padding: 70px;
   border-radius: 7px;
   box-shadow: 0 1px 7px black;
 
@@ -142,4 +142,11 @@ form textarea {
   outline: none;
   font-size: 1rem;
   resize: none
+}
+
+.background {
+  background-image: url(./assets/private_plane-wallpaper-1920x1200.jpg);
+  width: 100%;
+  padding: 20rem;
+
 }

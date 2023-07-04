@@ -1,19 +1,36 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Weather from './pages/weather'
 import Header from './component/dashboard';
-import Notes from './pages/notes';
+
 import CreateArea from './pages/Area';
 
 
 function App() {
   return (
-    <>
-    <Header />
-    <CreateArea />
-    <Notes />
-    <Weather />
-    </>
+    <Router>
+      <div className="flex-column justify-flex-start">
+        <Header />
+        <div className="container-main">
+          <Routes>
+            <Route
+              path="/"
+              element={<Weather />}
+            />
+            <Route
+            path='/Notes'
+            element= {<CreateArea />}
+            />
+            <Route
+            path="/Weather"
+            element={<Weather />}
+          />
+    </Routes>
+    </div>
+    </div>
+    </Router>
   )
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 
 function CreateArea(props) {
     return (
-        <div>
+        <div className="background">
             <form>
                 <input type="text" placeholder="Make a Note." name="Title" />
                 <p>
