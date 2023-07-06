@@ -1,11 +1,13 @@
 import React, { Component, useState } from 'react';
-import { createRoutesFromChildren } from 'react-router-dom';
+import { createRoutesFromChildren } from 'react-router-dom'
+import {FaTrash} from 'react-icons/fa6'
 
-function Notes(props) {
+function Notes({title, content, onDelete, id }) {
 return (
     <div className='note'>
-        <h1>My Note</h1>
-        <p>Hey how's it going</p>
+        <h1>{title}</h1>
+        <p>{content}</p>
+        <button onClick={() => onDelete(id)}><FaTrash size={20}/></button>
     </div>
 )
 

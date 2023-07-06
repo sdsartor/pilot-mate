@@ -121,7 +121,7 @@ form {
   padding: 7px;
   border-radius: 7px;
   box-shadow: 0 1px 7px black;
-  color: #5f6368;
+  color: black;
 
 }
 
@@ -148,8 +148,64 @@ form textarea {
   background: url(./assets/private_plane-wallpaper-1920x1200.jpg) no-repeat;
   width: 100%;
   padding: 20rem;
- 
+ color: black;
 
 }
 
+.note {
+  color: black;
+  width: 240px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px gray;
+  padding: 10px;
+  margin: 16px;
+  float: left;
+}
 
+.note h1 {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: black;
+}
+
+.note p {
+  font-size: 12px;
+  padding-top: 3px;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+form button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 18px;
+  bottom: -18px;
+  background: rgb(220, 210, 13);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px gray;
+  cursor: pointer;
+  outline: none;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  color: orange;
+  border: none;
+  background-color: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.count {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
