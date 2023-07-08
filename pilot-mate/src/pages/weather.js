@@ -13,7 +13,7 @@ const [location, setLocation] = useState('')
       console.log(response.data)
        }  ) 
 .catch(err => {
- alert('Please Try another city')
+ alert('Please try another city or edit spelling of city')
 
   })
 }
