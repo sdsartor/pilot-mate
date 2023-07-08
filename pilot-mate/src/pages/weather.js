@@ -11,9 +11,14 @@ const [location, setLocation] = useState('')
     axios.get(url).then((response) => {
       setData(response.data)
       console.log(response.data)
-       }  )
+       }  ) 
+.catch(err => {
+ alert('Please Try another city')
+
+  })
 }
   }
+
 
     return (
     <div id='background2' className='Weather'>
