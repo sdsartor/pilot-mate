@@ -2,8 +2,8 @@ import React from 'react';
 
 function Count({count}) {
     return (
-        <div className='count'>
-            <h4>{count}</h4>
+        <div className='background'>
+            <h4 id='showing'>{count}</h4>
         </div>
     )
 }

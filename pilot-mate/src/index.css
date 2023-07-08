@@ -145,21 +145,23 @@ form textarea {
 }
 
 .background {
-  background: url(./assets/private_plane-wallpaper-1920x1200.jpg) no-repeat;
+  background: url(./assets/private_plane-wallpaper-1920x1200.jpg) no-repeat contain;
   width: 100%;
-  padding: 20rem;
+  height: 100vh;
  color: black;
 
 }
 
 .note {
+ 
   color: black;
   width: 240px;
   border-radius: 4px;
   box-shadow: 0 2px 5px gray;
   padding: 10px;
-  margin: 16px;
   float: left;
+  background-color: #fff;
+  margin: 10px;
 }
 
 .note h1 {
@@ -205,7 +207,43 @@ form button {
 
 .count {
   display: flex;
-  margin-top: 20px;
-  align-items: center;
   justify-content: center;
+  margin-bottom: 200%;
 }
+
+#root {
+  background-color: red;
+  background-image: url(./assets/background-plane.jpg);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-primary{
+  background-color: red;
+  padding: 20px;
+  text-align: right;
+  
+}
+
+#notesdash {
+  margin-right: 20px;
+  color: cadetblue;
+  text-decoration-line: none;
+  font-size: 20px;
+}
+
+#weatherdash {
+  color: cadetblue;
+  text-decoration-line: none;
+  font-size: 20px;
+}
+
+#showing {
+  position: absolute;
+  font-size: 24px;
+  text-align: center;
+  margin-top: -50vh;
+}
+

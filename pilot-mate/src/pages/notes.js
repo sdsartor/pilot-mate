@@ -5,9 +5,11 @@ import {FaTrash} from 'react-icons/fa6'
 function Notes({title, content, onDelete, id }) {
 return (
     <div className='note'>
+      <div className='words'>
         <h1>{title}</h1>
         <p>{content}</p>
         <button onClick={() => onDelete(id)}><FaTrash size={20}/></button>
+    </div>
     </div>
 )
 
