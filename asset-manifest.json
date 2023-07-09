@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pilot-mate/static/css/main.1115a05c.css",
+    "main.js": "/pilot-mate/static/js/main.48cf4cc3.js",
+    "static/media/background-plane.jpg": "/pilot-mate/static/media/background-plane.91bf9034e4b3db01a9aa.jpg",
+    "static/media/private_plane-wallpaper-1920x1200.jpg": "/pilot-mate/static/media/private_plane-wallpaper-1920x1200.f4d73342a0a93d983cee.jpg",
+    "index.html": "/pilot-mate/index.html",
+    "main.1115a05c.css.map": "/pilot-mate/static/css/main.1115a05c.css.map",
+    "main.48cf4cc3.js.map": "/pilot-mate/static/js/main.48cf4cc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1115a05c.css",
+    "static/js/main.48cf4cc3.js"
+  ]
+}
