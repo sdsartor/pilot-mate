@@ -28,7 +28,7 @@ function App() {
 
 
 
-  return (
+ 
     <Router>
       <div className="flex-column justify-flex-start">
         <Header />
@@ -56,7 +56,7 @@ function App() {
     </div>
     </div>
     </Router>
-  )
+  
 }
 
 
