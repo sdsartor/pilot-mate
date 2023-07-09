@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {GrAdd} from 'react-icons/gr';
 
 function CreateArea({ submitButton, onAdd }) {
@@ -7,6 +7,17 @@ function CreateArea({ submitButton, onAdd }) {
         title: '',
         content: '',
     });
+
+    const [data, setData] = useState(() => {
+        const savedState = localStorage.getItem('notesdata');
+        const data = JSON.parse(savedState);
+        return data || [];
+    });
+
+    useEffect(() => {
+    localStorage.setItem('notesdata', JSON.stringify(data));
+    }, [data]);
+
 
     function handleChange(e) {
         const{ name, value } = e.target;
