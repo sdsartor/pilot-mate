@@ -11,12 +11,17 @@ const [location, setLocation] = useState('')
     axios.get(url).then((response) => {
       setData(response.data)
       console.log(response.data)
-       }  )
+       }  ) 
+.catch(err => {
+ alert('Please try another location or edit spelling of the location')
+
+  })
 }
   }
 
+
     return (
-    <div className='Weather'>
+    <div id='background2' className='Weather'>
   <div className='search'>
   <input value={location} onChange={event => setLocation(event.target.value)}
   onKeyPress={searchLocation}
@@ -36,7 +41,7 @@ const [location, setLocation] = useState('')
 </div>
 </div>
 
-{data.name != undefined &&
+{data.name !== undefined &&
 <div className="bottom">
 <div className="feels">
 {data.main ? <p className="bold">{data.main.feels_like.toFixed()} °F</p> : null }
